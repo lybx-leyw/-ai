@@ -1,0 +1,12 @@
+-i https://pypi.tuna.tsinghua.edu.cn/simple
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+datasets==3.6.0
+matplotlib==3.10.0
+numpy==1.26.4
+nvidia-ml-py==13.590.48
+scipy==1.15.3
+pandas==2.3.3
+
+torch==2.10.0
+torchvision==0.25.0
