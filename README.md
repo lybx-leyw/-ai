@@ -172,6 +172,31 @@ Loss = CE(主预测) + CE(候选预测) + α * Lexp
 
 ---
 
+## 数据集
+1.本项目使用了来自 ModelScope 的数据集 [**gongjy/minimind_dataset**]，在此向其作者表示感谢。
+2.除此之外，作者通过调用DeepSeek的API，生成了5000余条梳理购物清单的对话数据，用于验证模型在特定任务上的表现。原始数据见Dataset/。
+3.训练gated_TinySeek时，作者从ModelScope 的数据集 [**gongjy/minimind_dataset**]以及我的购物清单数据集上随机抽取11268条对话数据再次打乱。
+
+### 数据集信息
+
+-   **名称**：gongjy/minimind_dataset
+-   **来源链接**：https://www.modelscope.cn/datasets/gongjy/minimind_dataset/files
+-   **许可证**：Apache License 2.0
+
+### 遵守原始许可证
+
+本数据集的使用遵循 Apache License 2.0 的规定。
+根据许可证要求，我们在此声明：
+
+1.  我们保留了原始数据集中包含的所有版权、专利、商标及归属声明。
+2.  我们删除了原始数据集中rmix相关的有过多英文的部分，以符合中文语境。详情可见[](tools\utilities_c\norm_mix_r.c)
+3.  我们将原始数据集中identity相关的部分进行了修改，修正了作者名和模型名，以避免混淆。
+4.  本项目的根目录下附有 Apache License 2.0 的完整副本。
+
+完整的许可证条款请参阅项目根目录下的 [LICENSE](./LICENSE) 文件，或访问：http://www.apache.org/licenses/LICENSE-2.0。
+
+---
+
 ## docs要点速览
 
 为避免在 README 中重复大量实现细节，我将技术文档拆分至`docs/`下。下列为从 `docs/` 中摘录的核心要点，便于快速浏览：
@@ -355,7 +380,9 @@ A: 尝试：
 
 ### 许可证
 
-当前尚未指定许可证
+本项目采用 Apache License 2.0 许可证。
+
+完整的许可证条款请参阅项目根目录下的 [LICENSE](./LICENSE) 文件，或访问：http://www.apache.org/licenses/LICENSE-2.0
 
 ---
 
